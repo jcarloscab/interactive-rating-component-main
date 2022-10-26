@@ -1,0 +1,123 @@
+/*---------------------------------------------------------------*/
+/*                 M A I N                                       */
+/*---------------------------------------------------------------*/
+.rating-card {
+  background-color: $medium-dark-blue;
+  width: 425px;
+  height: 425px;
+  border-radius: 5%;
+  padding: 30px;
+  
+  @media screen and (max-width: 375px) {
+    & {
+      width: 90%;
+      height: 70vh;
+      padding: 15px;
+    }
+  }
+  
+  &__rating-state {
+    /* rating state */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  &__star-container {
+    background-color: $dark-blue;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  &__title {
+    color: $white;
+    font-weight: 400;
+  }
+  
+  &__description {
+    color: $light-grey;
+    line-height: 1.5rem;
+  }
+  
+  &__rating {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  
+  &__rating-item {
+    @extend .rating-card__star-container;
+    color: $light-grey;
+    font-weight: 700;
+    font-size: 1.1rem;
+    
+    &:hover {
+      cursor: pointer;
+      background-color: $medium-grey;
+      color: $white;
+    }
+    
+    &--active {
+      background-color: $orange;
+      color: $white;
+    }
+  }
+
+  &__thank {
+    /*thank State*/
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  &__result {
+    background-color: $dark-blue;
+    color: $orange;
+    padding: 10px 25px;
+    border-radius: 25px;
+    margin-top: 15px;
+  }
+  
+  &__thank-you {
+    @extend .rating-card__title;    
+    font-size: 1.8rem;
+    font-weight: 400;
+  }
+
+  &__gratitude {
+    @extend .rating-card__description;
+    text-align: center;
+  }
+}
+
+.button {
+  width: 100%;
+  background-color: $orange;
+  color: $white;
+  line-height: 3rem;
+  border-radius: 25px;
+  font-size: 1rem;
+  letter-spacing: 0.2rem;
+  border: none;
+  
+  &:hover {
+    cursor: pointer;
+    background-color: $white;
+    color: $orange;
+  }
+}
+
+.hidden {
+  display: none;
+}
