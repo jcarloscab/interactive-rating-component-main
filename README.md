@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- URL: [URL](https://your-live-site-url.com)
+- URL: [URL](https://jcarloscab.github.io/interactive-rating-component-main/)
 
 ## My process
 
