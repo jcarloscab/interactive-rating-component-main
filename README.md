@@ -29,7 +29,8 @@ Users should be able to:
 
 ### Links
 
-- URL: [URL](https://jcarloscab.github.io/interactive-rating-component-main/)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/interactiveratingcomponentmain-leSHcTbVkN)
+- Live URL: [URL](https://jcarloscab.github.io/interactive-rating-component-main/)
 
 ## My process
 
